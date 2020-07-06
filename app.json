@@ -9,7 +9,7 @@
       "python"
     ],
     "repository": "https://github.com/lzzy12/python-aria-mirror-bot",
-   // "website": "https://afdulfauzan.tech",
+    "website": "https://github.com/herrysis404/testbotllzy/tree/master",
     "success_url": "https://github.com/lzzy12/python-aria-mirror-bot/blob/master/README.md",
     "stack": "container",
     "env": {
