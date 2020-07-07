@@ -21,7 +21,7 @@ Deploying is pretty much straight forward and is divided into several steps as f
 ## Installing requirements
 ```
 we need:
-1. Clone repo
+1. Fork this repo
 2. Credentials.json & Token Pickle
 3. User Session String.
 4. Click on Deploy Button, and fill the Fields then deploy app.
@@ -30,14 +30,9 @@ we need:
 
 ```
 STEP 1 :
-- Clone this repo:
-git clone https://github.com/lzzy12/python-aria-mirror-bot mirror-bot/
-cd mirror-bot
-
-- Install requirements
-For Debian based distros
-
-sudo apt install python3
+SIGNUP or Login to your account then :
+- Fork this repo
+After forked, we still need to upload Credentials.json and token.pickle to your forked repo. proceed to step 2
 
 ```
 
@@ -59,6 +54,8 @@ STEP 2 :
 pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 python3 generate_drive_token.py
 
+Right now we have 
+Credentials.json and token.pickle.. so Upload these files to your forked repo.
 ```
 
 
@@ -72,7 +69,7 @@ To get user session string use this command :
 ```
 STEP 4
 ## Deploying
-
+CLICK DEPLOY BUTTON ON YOUR FORKED REPO. THATS IT !
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Fill up rest of the fields. Meaning of each fields are discussed below:
