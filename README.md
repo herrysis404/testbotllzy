@@ -32,7 +32,8 @@ we need:
 STEP 1 :
 SIGNUP or Login to your account then :
 - Fork this repo
-After forked, we still need to upload Credentials.json and token.pickle to your forked repo. proceed to step 2
+After forked, we still need to upload Credentials.json and token.pickle to your forked repo. 
+proceed to step 2
 
 ```
 
@@ -100,7 +101,8 @@ Let us create only the service accounts that we need.
 **Warning:** abuse of this feature is not the aim of autorclone and we do **NOT** recommend that you make a lot of projects, just one project and 100 sa allow you plenty of use, its also possible that overabuse might get your projects banned by google. 
 
 ```
-Note: 1 service account can copy around 750gb a day, 1 project makes 100 service accounts so thats 75tb a day, 
+Note: 1 service account can copy around 750gb a day, 1 project makes 100 service accounts
+so thats 75tb a day, 
 for most users this should easily suffice. 
 
 ```
