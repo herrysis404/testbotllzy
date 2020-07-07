@@ -1,11 +1,8 @@
 # What is this repo about?
-This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.
+This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive and Now you can deploy to HEROKU.
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-# Inspiration 
-This project is heavily inspired from @out386 's telegram bot which is written in JS.
 
 # Features supported:
 - Mirroring direct download links to google drive
@@ -19,39 +16,30 @@ This project is heavily inspired from @out386 's telegram bot which is written i
 - Mirror all youtube-dl supported links
 - Mirror telegram files
 
-# Upcoming features (TODOs):
-
 # How to deploy?
 Deploying is pretty much straight forward and is divided into several steps as follows:
 ## Installing requirements
+```
+we need:
+1. Credentials.json
+2. Token Pickle
+3. User Session String.
+4. Click on Deploy Button, and fill the Fields then deploy app.
 
+```
 - Clone this repo:
 ```
 git clone https://github.com/lzzy12/python-aria-mirror-bot mirror-bot/
 cd mirror-bot
-```
 
 - Install requirements
 For Debian based distros
-```
+
 sudo apt install python3
-```
-Install Docker by following the [official docker docs](https://docs.docker.com/engine/install/debian/)
 
-
-- For Arch and it's derivatives:
 ```
-sudo pacman -S docker python
-```
-
 ## Setting up config file
-```
-cp config_sample.env config.env
-```
-- Remove the first line saying:
-```
-_____REMOVE_THIS_LINE_____=True
-```
+
 Fill up rest of the fields. Meaning of each fields are discussed below:
 - **BOT_TOKEN** : The telegram bot token that you get from @BotFather
 - **GDRIVE_FOLDER_ID** : This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.
@@ -68,7 +56,6 @@ Fill up rest of the fields. Meaning of each fields are discussed below:
 ```
 python3 generate_string_session.py
 ```
-Note: You can limit maximum concurrent downloads by changing the value of MAX_CONCURRENT_DOWNLOADS in aria.sh. By default, it's set to 2
  
 ## Getting Google OAuth API credential file
 
@@ -87,18 +74,8 @@ python3 generate_drive_token.py
 ```
 ## Deploying
 
-- Start docker daemon (skip if already running):
-```
-sudo dockerd
-```
-- Build Docker image:
-```
-sudo docker build . -t mirror-bot
-```
-- Run the image:
-```
-sudo docker run mirror-bot
-```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 # Using service accounts for uploading to avoid user rate limit
 For Service Account to work, you must set USE_SERVICE_ACCOUNTS="True" in config file or environment variables
